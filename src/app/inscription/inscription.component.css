@@ -1,0 +1,40 @@
+.inscription-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .inscription-container h2 {
+    text-align: center;
+  }
+  
+  .inscription-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .inscription-container form div {
+    margin-bottom: 15px;
+  }
+  
+  .inscription-container form label {
+    margin-bottom: 5px;
+  }
+  
+  .inscription-container form input {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .inscription-container form button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

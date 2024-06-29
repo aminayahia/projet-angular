@@ -1,1 +1,6 @@
-<p>detail-salle works!</p>
+<div *ngIf="salle">
+    <h2>Détails de la salle</h2>
+    <p>Nom : {{ salle.nom }}</p>
+    <p>Capacité : {{ salle.capacite }}</p>
+  </div>
+  

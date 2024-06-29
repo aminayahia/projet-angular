@@ -1,1 +1,15 @@
-<p>modification-salle works!</p>
+<div *ngIf="salle">
+    <h2>Modification de la salle</h2>
+    <form (ngSubmit)="modifierSalle()">
+      <div>
+        <label>Nom de la salle:</label>
+        <input type="text" [(ngModel)]="salle.nom" name="nom" required>
+      </div>
+      <div>
+        <label>Capacité:</label>
+        <input type="number" [(ngModel)]="salle.capacite" name="capacite" required>
+      </div>
+      <button type="submit">Modifier Salle</button>
+    </form>
+  </div>
+  

@@ -1,1 +1,15 @@
-<p>modification-reservation works!</p>
+<div *ngIf="reservation">
+    <h2>Modification de la réservation</h2>
+    <form (ngSubmit)="modifierReservation()">
+      <div>
+        <label>Date de la réservation:</label>
+        <input type="date" [(ngModel)]="reservation.date" name="date" required>
+      </div>
+      <div>
+        <label>Heure de la réservation:</label>
+        <input type="time" [(ngModel)]="reservation.heure" name="heure" required>
+      </div>
+      <button type="submit">Modifier Réservation</button>
+    </form>
+  </div>
+  
